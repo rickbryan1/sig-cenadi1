@@ -69,8 +69,8 @@ return [
             'host' => env('DB_HOST', 'postgres.railway.internal'),
             'port' => env('DB_PORT', '5432'),
             'database' => env('DB_DATABASE', 'railway'),
-            'username' => env('DB_USERNAME', 'postgres'),
-            'password' => 'kimtaehyung', // Mettez le mot de passe ici entre guillemets simples
+            'username' => 'postgres', // <-- Mettez 'postgres' ici et non 'root'
+            'password' => 'kimtaehyung', 
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
