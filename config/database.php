@@ -64,19 +64,14 @@ return [
         ],
 
 'pgsql' => [
-            'driver' => 'pgsql',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'postgres.railway.internal'),
-            'port' => env('DB_PORT', '5432'),
-            'database' => env('DB_DATABASE', 'railway'),
-            'username' => 'postgres', // <-- Mettez 'postgres' ici et non 'root'
-            'password' => 'kimtaehyung', 
-            'charset' => 'utf8',
-            'prefix' => '',
-            'prefix_indexes' => true,
-            'schema' => 'public',
-            'sslmode' => 'prefer',
-        ],
+         'driver' => 'pgsql',
+         'url' => env('DATABASE_URL'),
+         'charset' => 'utf8',
+         'prefix' => '',
+         'prefix_indexes' => true,
+         'schema' => 'public',
+         'sslmode' => 'prefer',
+     ],
 
         'sqlsrv' => [
             'driver' => 'sqlsrv',
