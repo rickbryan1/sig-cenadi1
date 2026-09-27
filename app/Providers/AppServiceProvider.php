@@ -1,9 +1,7 @@
-<?php
-
 namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Illuminate\Support\Facades\Schema; // <-- Ajoutez cette ligne
+use Illuminate\Support\Facades\URL; // <-- Ajoutez cette ligne
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -24,6 +22,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191); // <-- Ajoutez cette ligne
+        // Force toutes les URLs générées (formulaires, liens) à utiliser le HTTPS
+        if (config('app.env') === 'production') {
+            URL::forceScheme('https');
+        }
     }
 }
