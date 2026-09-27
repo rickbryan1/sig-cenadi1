@@ -46,7 +46,7 @@
                 </div>
             @endif
 
-            <form class="space-y-4" method="POST" action="/login">
+            <form class="space-y-4" method="POST" action="{{ secure_url('/login') }}">
                 @csrf
                 <div>
                     <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email Institutionnel</label>
