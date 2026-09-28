@@ -33,7 +33,7 @@
                 <span class="material-symbols-outlined text-2xl">account_balance</span>
             </div>
             <h1 class="text-base font-bold tracking-tight">CENADI Douala</h1>
-            <p class="text-xs text-slate-400 mt-0.5">Système Intégré de Gestion des Projets (SIG-Projet)</p>
+            <p class="text-xs text-slate-400 mt-0.5">Système de Gestion des Projets (SIG-Projet)</p>
         </div>
 
         <!-- Formulaire de Connexion -->
@@ -49,7 +49,7 @@
             <form class="space-y-4" method="POST" action="{{ secure_url('/login') }}">
                 @csrf
                 <div>
-                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email Institutionnel</label>
+                    <label class="block text-xs font-semibold text-slate-700 uppercase tracking-wider mb-1">Email </label>
                     <div class="relative flex items-center">
                         <span class="material-symbols-outlined absolute left-3 text-slate-400 text-lg">mail</span>
                         <input class="w-full bg-slate-50 border border-slate-300 rounded-lg pl-10 pr-3 py-2.5 text-xs text-slate-900 focus:outline-none focus:ring-2 focus:ring-corporate-600" id="matricule" name="email" placeholder="ex: agent@cenadi.cm" type="email" required>
