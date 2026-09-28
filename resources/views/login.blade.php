@@ -87,7 +87,7 @@
         <!-- Pied de page sécurisé -->
         <div class="bg-slate-50 px-6 py-3 border-t border-slate-200 text-center">
             <p class="text-[11px] text-slate-500 flex items-center justify-center gap-1">
-                <span class="material-symbols-outlined text-xs text-corporate-600">shield</span> Chiffré SSL/TLS • Antenne Régionale Douala
+                <span class="material-symbols-outlined text-xs text-corporate-600">shield</span> Antenne Régionale Douala
             </p>
         </div>
     </div>
