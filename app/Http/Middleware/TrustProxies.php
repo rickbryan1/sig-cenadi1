@@ -1,27 +1,29 @@
 <?php
-    namespace App\Http\Middleware;
+    
+namespace App\Http\Middleware;
 
 use Illuminate\Http\Middleware\TrustProxies as Middleware;
-use Symfony\Component\HttpFoundation\Request;
+use Illuminate\Http\Request;
 
 class TrustProxies extends Middleware
 {
     /**
      * The trusted proxies for this application.
      *
-     * @var array|string|null
+     * @var array<int, string>|string|null
      */
-    protected $proxies = '*'; // <-- Autoriser tous les proxys (nécessaire sur Railway)
+    protected $proxies;
 
     /**
      * The headers that should be used to detect proxies.
      *
      * @var int
      */
-    protected $headers = Request::HEADER_X_FORWARDED_FOR 
-                       | Request::HEADER_X_FORWARDED_HOST 
-                       | Request::HEADER_X_FORWARDED_PORT 
-                       | Request::HEADER_X_FORWARDED_PROTO 
-                       | Request::HEADER_X_FORWARDED_AWS_ELB;
+    protected $headers =
+        Request::HEADER_X_FORWARDED_FOR |
+        Request::HEADER_X_FORWARDED_HOST |
+        Request::HEADER_X_FORWARDED_PORT |
+        Request::HEADER_X_FORWARDED_PROTO |
+        Request::HEADER_X_FORWARDED_AWS_ELB;
 }
 
