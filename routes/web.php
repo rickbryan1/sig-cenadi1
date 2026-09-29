@@ -5,7 +5,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\SponsorController;
-use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminController; 
 use App\Http\Controllers\AlertController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\DashboardController;
