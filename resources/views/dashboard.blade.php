@@ -269,7 +269,7 @@
         <div id="wizard-container" class="hidden bg-surface-container-lowest shadow-lg rounded-lg border border-outline-variant overflow-hidden mt-3 transition-all duration-300">
             <div class="bg-on-surface text-white px-4 py-3 flex items-center justify-between">
                 <span class="font-bold text-xs uppercase tracking-wider flex items-center gap-2">
-                    <span class="material-symbols-outlined text-[16px]">post_add</span> Wizard d'Initialisation de Projet &amp; Équipe
+                    <span class="material-symbols-outlined text-[16px]">post_add</span>Initialisation du Projet &amp; Équipe
                 </span>
                 <button onclick="toggleWizard()" class="text-slate-300 hover:text-white p-1 rounded">
                     <span class="material-symbols-outlined text-[16px]">close</span>
