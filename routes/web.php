@@ -29,7 +29,7 @@ Route::get('/admin/backup', [AdminController::class, 'backupDatabase'])->name('a
 Route::post('/admin/reset-requests/{id}/resolve', [AdminController::class, 'resolveResetRequest'])->name('admin.reset.resolve')->middleware(['auth', 'role:admin']);
 Route::put('/admin/profile', [AdminController::class, 'updateProfile'])->name('admin.profile.update')->middleware(['auth', 'role:admin']);
 Route::post('/admin/restore', [AdminController::class, 'restoreDatabase'])->name('admin.restore')->middleware(['auth', 'role:admin']);
-
+Route::post('/admin/users/{id}/toggle', [AdminController::class, 'toggleUserStatus'])->name('admin.users.toggle');
 // 3. Tableau de bord Chef de Projet
 Route::get('/dashboard', [ProjectController::class, 'index'])->middleware(['auth', 'role:chef_projet']);
 Route::post('/projects', [ProjectController::class, 'store'])->name('projects.store')->middleware(['auth', 'role:chef_projet']);
