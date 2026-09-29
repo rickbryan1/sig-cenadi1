@@ -64,10 +64,10 @@
                 <span class="material-symbols-outlined text-lg">dashboard</span><span>Vue Globale</span>
             </button>
             <button onclick="switchTab('admin-users')" id="nav-admin-users" class="nav-tab flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 hover:text-white text-xs font-bold text-left transition-colors">
-                <span class="material-symbols-outlined text-lg">manage_accounts</span><span>Utilisateurs &amp; IAM</span>
+                <span class="material-symbols-outlined text-lg">manage_accounts</span><span>Utilisateurs &amp; roles</span>
             </button>
             <button onclick="switchTab('admin-backup')" id="nav-admin-backup" class="nav-tab flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 hover:text-white text-xs font-bold text-left transition-colors">
-                <span class="material-symbols-outlined text-lg">database</span><span>Sauvegarde &amp; SAN</span>
+                <span class="material-symbols-outlined text-lg">database</span><span>Sauvegarde &amp; restauration</span>
             </button>
             <button onclick="switchTab('admin-logs')" id="nav-admin-logs" class="nav-tab flex items-center gap-3 px-3 py-2.5 rounded-lg text-white/90 hover:bg-white/10 hover:text-white text-xs font-bold text-left transition-colors">
                 <span class="material-symbols-outlined text-lg">history</span><span>Journal d'Activité</span>
@@ -85,7 +85,7 @@
         <section id="section-admin-home" class="admin-section flex flex-col gap-4 searchable-item">
             <div class="bg-white/95 p-6 rounded-xl border border-slate-300 shadow-sm">
                 <div class="inline-flex items-center gap-2 px-2.5 py-1 bg-emerald-100 text-emerald-900 rounded-full text-xs font-extrabold mb-2 border border-emerald-300">
-                    <span class="w-2 h-2 rounded-full bg-corporate-600 animate-pulse"></span> Sécurité Opérationnelle • v2.4.0
+                    <span class="w-2 h-2 rounded-full bg-corporate-600 animate-pulse"></span> gestions des utilisateurs
                 </div>
                 <h2 class="text-xl font-extrabold text-black">Panneau Administrateur ({{ $user->name }})</h2>
                 <p class="text-xs text-black font-semibold mt-1">Supervision centrale, gouvernance des identités et intégrité système CENADI-Douala.</p>
@@ -158,7 +158,7 @@
         <section id="section-admin-backup" class="admin-section hidden flex flex-col gap-4 searchable-item">
             <h3 class="text-sm font-extrabold uppercase text-white tracking-wider drop-shadow">Sauvegarde &amp; Continuité d'Activité</h3>
             <div class="bg-white/95 p-5 rounded-xl border border-slate-300 shadow-sm flex flex-col gap-3">
-                <span class="text-xs font-extrabold text-black uppercase">PostgreSQL Cloud CENADI • SAN Bonanjo (18.4 Go chiffré)</span>
+                <span class="text-xs font-extrabold text-black uppercase"> Cloud CENADI (18.4 Go chiffré)</span>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <a href="{{ route('admin.backup') }}" class="flex items-center justify-center gap-2 bg-corporate-600 hover:bg-corporate-700 text-white py-2.5 px-4 text-xs font-extrabold rounded-lg shadow-sm">
                         <span class="material-symbols-outlined text-base">download</span> Créer Sauvegarde Immédiate (.sql)
