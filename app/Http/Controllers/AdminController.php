@@ -90,13 +90,9 @@ class AdminController extends Controller
     public function toggleUserStatus($id)
     {
         $targetUser = User::findOrFail($id);
-        if ($targetUser->id === Auth::id()) {
-            return redirect()->back()->with('error', 'Action interdite sur votre propre compte.');
-        }
-
-        $targetUser->is_active = !$targetUser->is_active;
-        $targetUser->save();
-
+    // Inverse l'état actif/suspendu
+    $user->is_active = !$user->is_active;
+    $user->save();
         return redirect()->back()->with('success', 'Statut du compte modifié.');
     }
 
